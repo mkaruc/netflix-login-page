@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix&copy; Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-image: url("background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.multiple {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.25rem;
+}
+section {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1.25rem;
+}
+.all {
+    width: 25rem;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+.netflix {
+    width: 10rem;
+}
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.PII {
+    display: flex;
+    flex-direction: column; 
+    line-height: 2.5rem;
+}
+.PII input, select {
+    height: 3.125rem;
+    color: black;
+}
+.PII select{
+    height: 1.875rem;
+}
+option {
+    color: black
+}
+textarea {
+    resize: none;
+    color: black;
+    height: 6rem;
+}
+.bottom {
+    margin-bottom: 1.25rem;
+}
+#feedback {
+    margin-bottom: 0.5rem;
+}
+#submit {
+    width: 7.8125rem;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 2.5rem;
+    margin: auto;
+    border: none;
+    border-radius: 1.5rem;
+}
+section p {
+    margin-bottom: 1rem;
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="img.png" alt="Netflix" class="netflix">
+        <p><i>Thank you for signing up at Netflix. Tell us more about yourself</i></p>
+        <div class="all">
+            <form action="#">
+                <div class="PII">
+                    <label for="fullname">Name</label>
+                    <input type="text" name="name" required placeholder="Enter your name" id="fullname">
+
+                    <label for="yourage">Age</label>
+                    <input type="number" name="age" required placeholder="Age" id="yourage">
+
+                    <label for="">Email</label>
+                    <input type="email" name="email" required placeholder="Enter your email" id="youreamil">
+                    
+
+                    <label for="">Content type</label>
+                    <select name="content" id="content">
+                        <option value="series">Series</option>
+                        <option value="documentaries">Documentaries</option>
+                        <option value="movies">Movies</option>
+                        <option value="animations">Animations</option>
+                    </select>
+                </div>
+                <div class="multiple">
+                    <span>Movie type</span>
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" name="comedy" id="" checked>
+                            <label for="">Comedy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="action" id="">
+                            <label for="">Action</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="romance" id="">
+                            <label for="">Romance</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="multiple">
+                    <span>Gender</span>
+                    <div class="checkbox bottom">
+                        <div>
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <label for="feedback" id="feedback">Feedback</label>
+                <textarea name="comment" id="feedback" cols="30" rows="10" placeholder="Any Comment" ></textarea>
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
