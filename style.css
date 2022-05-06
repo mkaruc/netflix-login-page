@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body{
+    margin: auto;
+    padding: 4px;
+    background-color: white;
+}
+header{
+    align-items: center ;
+    margin: 0px;
+    padding: 0px 5px;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    justify-content: space-between;
+}
+li{
+    display: inline;
+    margin: 10px;
+}
+.icon{
+    position: relative;
+    top: 6px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.miclogo{
+    position: relative;
+    right: 15px;
+}
+.searchlogo{
+    position: relative;
+    left: 10px;
+}
+.searchline{
+    width: 515px;
+    height: 2.5rem;
+    position: relative;
+    border-style: none;
+    outline: none;
+}
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+.signin{
+    color: white;
+    background-color: #4285f4;
+    font-weight: bold;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+.google-buttons{
+    margin: 15px;
+}
+.googlebuttons{
+    color: grey;
+    background-color:  rgb(228, 228, 228);;
+    border-style:none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    margin: 7px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+.googlebuttons input:hover {
+    border: 1px solid lightgray;
+    cursor: pointer;
+  }
+.sublink{
+    text-decoration: blue !important;
+}
